@@ -2,7 +2,9 @@ import socket
 from openai import OpenAI
 from flask import jsonify
 
-
+client = OpenAI(
+  api_key="YOUR_API_KEY"
+)
 
 def chat_with_gpt(prompt):
     try:
