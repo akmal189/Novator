@@ -228,8 +228,8 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.business-helper__form').addEventListener('submit', function(e){
         e.preventDefault();
         activity = '<b>Деятельность: </b> ' + document.querySelector('.activity').value + '; ';
-        region = 'Регион: ' + document.querySelector('.region').value + '; ';
-        summ = 'Сумма вложения: от ' + document.querySelector('[name="investment_min"]').value + 'до ' + document.querySelector('[name="investment_max"]').value;
+        region = '<b>Регион: </b> ' + document.querySelector('.region').value + '; ';
+        summ = '<b>Сумма вложения: </b> от ' + document.querySelector('[name="investment_min"]').value + 'до ' + document.querySelector('[name="investment_max"]').value;
 
         document.querySelector('#prompt').value = activity + region + summ;
 

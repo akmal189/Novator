@@ -9,7 +9,7 @@ function initChatGPT(apiUrl, chatElement, promptInput, submitButton) {
 
         const userMessage = document.createElement('div');
         userMessage.className = 'message user';
-        userMessage.innerText = 'Пользователь: ' + promptText;
+        userMessage.innerHTML = '<b>Пользователь: </b> ' + promptText;
         chatElement.appendChild(userMessage);
         document.querySelector('#prompt').value = ''
         scrollToBottom();
